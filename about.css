@@ -15,10 +15,22 @@ body{
     width: 100%;
     padding: 50px 8%;
 }
+.imageSection{
+    grid-area:imageSect;   
+}
+.infoSection{
+    grid-template-columns: infoSect; 
+}
+.skillSection{
+    grid-area: skillSect; 
+}
+
 .about_container .about_contents{
     display: grid;
     grid-template-columns: 2fr 5fr;
     grid-gap: 70px;
+    grid-template-areas: 'imageSect infoSect'
+                         'skillSect skillSect';
 }
 .about_contents .imageSection{
     position: relative;
@@ -156,6 +168,39 @@ body{
     color: #aaabb0;
     font-size: 17px;
 }
+/* @media(max-width: 1068px){
+    .about_container .about_contents{
+        grid-template-areas: 'imageSect skillsect'
+                             'infoSect infoSect';
+    } 
+}
+@media(max-width: 868px){
+    .about_container .about_contents{
+        grid-template-areas: 'imageSect imageSect'
+                             'infoSect infoSect'
+                             'skillSect skillSect';
+    } 
+}
+@media(max-width:668px){
+    .personalInfo{
+        grid-template-columns: 1fr;
+    }
+}
+
+.skillSection{
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+} */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 @keyframes slideBottom{
     0%{
         transform: translateY(100px);
@@ -194,16 +239,6 @@ body{
     }
     100%{
         transform: scale(1);
-        opacity: 1;
-    }
-}
-@keyframes slideRight{
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
         opacity: 1;
     }
 }
