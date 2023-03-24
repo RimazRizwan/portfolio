@@ -4,6 +4,29 @@
 	<title>Contact</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+		.header{
+    		position: fixed;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		padding: 20px 10%;
+    		background: transparent;
+    		display: flex;
+    		justify-content: space-between;
+    		align-items: center;
+    		z-index: 100;
+		}
+		.navbar a { 
+    		display: inline-block;
+    		font-size: 20px;
+    		color: #fff;
+    		text-decoration: none;
+    		font-weight: 500;
+    		margin-left: 65px;
+    		transition: .3s;
+    		animation: slideTop .5s ease forwards;
+    		animation-delay: calc(.2s * var(--i));
+		}
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #1f242d;
@@ -98,6 +121,17 @@
 	</style>
 </head>
 <body>
+	<header class="header">
+        
+		<nav class="navbar">
+			<a href="#" style="--i:1;" class="active" >Home</a>
+			<a href="#" style="--i:2;">About</a>
+			<a href="#" style="--i:3;">Skills</a>
+			<a href="#" style="--i:4;">Potofolio</a>
+			<a href="contact.html" style="--i:5;">Contact</a>
+
+		</nav>
+	</header>
 	<h1>Contact</h1>
 	<form>
 		<label for="name">Name:</label>
