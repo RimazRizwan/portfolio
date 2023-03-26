@@ -22,14 +22,14 @@ body{
     align-items: center;
     z-index: 100;
 }
-/* .logo{
+ .logo{
     font-size: 25px;
     color: #fff;
     font-weight: 600;
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-} */
+} 
 .navbar a { 
     display: inline-block;
     font-size: 20px;
