@@ -27,6 +27,9 @@
     		animation: slideTop .5s ease forwards;
     		animation-delay: calc(.2s * var(--i));
 		}
+		.navbar a:hover,
+		.navbar a.active{
+    		color: #0ef;
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #1f242d;
@@ -125,8 +128,8 @@
 	<header class="header">
         
 		<nav class="navbar">
-			<a href="index.html" style="--i:1;" class="active" >Home</a>
-			<a href="about.html" style="--i:2;">About</a>
+			<a href="index.html" style="--i:1;"  >Home</a>
+			<a href="about.html" style="--i:2;" class="active">About</a>
 			<a href="skills.html" style="--i:3;">Skills</a>
 			<a href="contact.html" style="--i:5;">Contact</a>
 
