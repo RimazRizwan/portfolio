@@ -3,6 +3,18 @@
   <head>
     <title>Rimaz Rizwan</title>
     <style>
+	.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 20%; /* increase left padding from 10% to 20% */
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+      }
        .logo{
     	font-size: 25px;
     	color: var(--text-color);
@@ -30,18 +42,7 @@
      .navbar a.active{
     	color: #0ef;
      }
-      .header{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 20%;
-        background: transparent;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-      }
+      
       
       /* Style the form */
       form {
